@@ -5,11 +5,11 @@ require "nuntius/version"
 Gem::Specification.new do |s|
   s.name        = "nuntius"
   s.version     = Nuntius::VERSION
-  s.authors     = ["Sebastian Gamboa"]
-  s.email       = ["me@sagmor.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.author      = "Sebastian Gamboa"
+  s.email       = "me@sagmor.com"
+  s.homepage    = "https://github.com/sagmor/nuntius"
+  s.summary     = %q{Nuntius: A messenger, reporter, courier, bearer of news or tidings}
+  s.description = %q{Nuntius is a simple scheme to send and receive messages in a cryptographicaly secure and compatible way.}
 
   s.rubyforge_project = "nuntius"
 
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
   s.add_development_dependency "rspec", ">= 2.7.0"
-  # s.add_runtime_dependency "rest-client"
 end
