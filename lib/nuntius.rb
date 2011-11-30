@@ -1,5 +1,11 @@
-require "nuntius/version"
+require 'openssl'
 
 module Nuntius
-  # Your code goes here...
+  class Error < RuntimeError; end
 end
+
+require "nuntius/version"
+require "nuntius/encodings"
+require "nuntius/key"
+require "nuntius/envelope"
+require "nuntius/messenger"
