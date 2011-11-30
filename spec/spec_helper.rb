@@ -1,6 +1,8 @@
 require 'bundler/setup'
 
-require 'nuntius' # and any other gems you need
+require 'nuntius'
+
+Dir["spec/support/**/*.rb"].each { |f| require File.expand_path(f) }
 
 RSpec.configure do |config|
   # some (optional) config here
