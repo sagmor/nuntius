@@ -1,6 +1,6 @@
 # Nuntius:
 
-### A messenger, reporter, courier, bearer of news or tidings
+> A messenger, reporter, courier, bearer of news or tidings
 
 Nuntius is a simple scheme to send and receive messages in a cryptographicaly secure and compatible way.
 
@@ -60,7 +60,7 @@ Nuntius is a simple scheme to send and receive messages in a cryptographicaly se
 
 ## Encription Scheme
 
-Under the hood Nuntius is just a wrapper around OpenSSL and by default uses [RSA](http://en.wikipedia.org/wiki/RSA_(algorithm)), [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in [CBC mode](http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29) and [SHA512](http://en.wikipedia.org/wiki/SHA512) to encript/decript and sign/verify the messages and [URL Safe Base64](http://en.wikipedia.org/wiki/Base64#RFC_4648) to encode/decode the results.
+Under the hood Nuntius is just a wrapper around OpenSSL and by default uses [RSA]( http://en.wikipedia.org/wiki/RSA_%28algorithm%29 ), [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in [CBC mode](http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29) and [SHA512](http://en.wikipedia.org/wiki/SHA512) to encript/decript and sign/verify the messages and [URL Safe Base64](http://en.wikipedia.org/wiki/Base64#RFC_4648) to encode/decode the results.
 
 The whole scheme can be sumarized in 4 steps:
 
