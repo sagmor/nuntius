@@ -1,5 +1,6 @@
 module Nuntius
   class Envelope
+    include Enumerable
     attr_accessor :data, :key, :signature
 
     def initialize(attributes)
@@ -26,6 +27,10 @@ module Nuntius
 
     def raw_signature
       decode signature
+    end
+
+    def each(&block)
+      self.to_hash.each(&block)
     end
 
     protected
