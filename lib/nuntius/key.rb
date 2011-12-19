@@ -8,6 +8,23 @@ module Nuntius
       @key.private?
     end
 
+    def to_str
+      @key.to_pem
+    end
+
+    def hash
+      @key.hash
+    end
+
+    def ==(key)
+      case key
+      when Nuntius::Key
+        key.hash == self.hash
+      else
+        false
+      end
+    end
+
     def sign(string)
       digest = OpenSSL::Digest::SHA512.new.digest(string)
 
